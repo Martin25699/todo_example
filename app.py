@@ -6,7 +6,7 @@ from ext.json_encoder import UserJSONEncoder
 from exception import ValidationError
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://best:best@0.0.0.0:5432/todo_example'
+app.config.from_pyfile('settings.cfg')
 app.config['SWAGGER'] = {
     'title': 'TODO EXAMPLE API',
     'uiversion': 3
