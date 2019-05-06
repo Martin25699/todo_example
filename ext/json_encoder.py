@@ -3,6 +3,8 @@ from todo.model import Todo, Task
 
 
 class UserJSONEncoder(JSONEncoder):
+    """Расширение класса JSONEncoder, для преобразования классов проекта в JSON"""
+
     def default(self, o):
         if isinstance(o, Todo):
             return {

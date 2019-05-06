@@ -4,21 +4,21 @@ todo_list = {
             "name": "title",
             "in": "query",
             "type": "string",
-            "required": "false",
+            "required": False,
             "default": None
         },
         {
             "name": "per_page",
             "in": "query",
             "type": "integer",
-            "required": "false",
+            "required": False,
             "default": None
         },
         {
             "name": "page",
             "in": "query",
             "type": "integer",
-            "required": "false",
+            "required": False,
             "default": None
         }
     ],
